@@ -60,7 +60,7 @@ public enum FPEasing : Equatable {
     case outBounce
     case inOutBounce
     case outInBounce
-    
+
     public func parametricProgress(_ p : CGFloat) -> CGFloat {
         switch self {
         case .linear:
@@ -163,7 +163,7 @@ public enum FPEasing : Equatable {
             return (p == 1.0) ? p : 1.0 - pow(2, -10.0 * p)
         case .inOutExponential:
             if p == 0.0 || p == 1.0 { return p }
-            
+
             if p < 0.5 {
                 return 0.5 * pow(2, (20.0 * p) - 10.0)
             } else  {
@@ -173,7 +173,7 @@ public enum FPEasing : Equatable {
             if p == 1.0 {
                 return 0.5
             }
-            
+
             if (p < 0.5) {
                 return 0.5 * (1 - pow(2, -10.0 * p * 2.0))
             } else {
@@ -262,8 +262,8 @@ public enum FPEasing : Equatable {
             }
         }
     }
-    
-    public func reverseEasingCurve() -> FPEasing {
+
+    public func reverseEasing() -> FPEasing {
         switch self {
         case .linear:
             return .linear
@@ -458,4 +458,3 @@ public func ==(lhs : FPEasing, rhs : FPEasing) -> Bool {
         switch rhs { case .outInBounce: return true default: return false }
     }
 }
-

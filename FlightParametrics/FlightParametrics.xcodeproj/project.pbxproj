@@ -10,10 +10,10 @@
 		3A4632E12061F01100DFA946 /* FlightParametrics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4632D72061F01100DFA946 /* FlightParametrics.framework */; };
 		3A4632E62061F01100DFA946 /* FlightParametricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4632E52061F01100DFA946 /* FlightParametricsTests.swift */; };
 		3A4632E82061F01100DFA946 /* FlightParametrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A4632DA2061F01100DFA946 /* FlightParametrics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A4632F32061F14400DFA946 /* FAEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4632F22061F14400DFA946 /* FAEasing.swift */; };
-		3A4632F42061F14400DFA946 /* FAEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4632F22061F14400DFA946 /* FAEasing.swift */; };
+		3A4632F32061F14400DFA946 /* FPEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4632F22061F14400DFA946 /* FPEasing.swift */; };
+		3A4632F42061F14400DFA946 /* FPEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4632F22061F14400DFA946 /* FPEasing.swift */; };
 		3A4633112061F45100DFA946 /* FlightParametrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A4632DA2061F01100DFA946 /* FlightParametrics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A4633122061F52B00DFA946 /* FAEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4632F22061F14400DFA946 /* FAEasing.swift */; };
+		3A4633122061F52B00DFA946 /* FPEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4632F22061F14400DFA946 /* FPEasing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,7 @@
 		3A4632E02061F01100DFA946 /* FlightParametricsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightParametricsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4632E52061F01100DFA946 /* FlightParametricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightParametricsTests.swift; sourceTree = "<group>"; };
 		3A4632E72061F01100DFA946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A4632F22061F14400DFA946 /* FAEasing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAEasing.swift; sourceTree = "<group>"; };
+		3A4632F22061F14400DFA946 /* FPEasing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPEasing.swift; sourceTree = "<group>"; };
 		3A4632FA2061F33B00DFA946 /* FlightParametrics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlightParametrics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,7 +102,7 @@
 		3A4632F12061F14300DFA946 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				3A4632F22061F14400DFA946 /* FAEasing.swift */,
+				3A4632F22061F14400DFA946 /* FPEasing.swift */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4632F32061F14400DFA946 /* FAEasing.swift in Sources */,
+				3A4632F32061F14400DFA946 /* FPEasing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4632F42061F14400DFA946 /* FAEasing.swift in Sources */,
+				3A4632F42061F14400DFA946 /* FPEasing.swift in Sources */,
 				3A4632E62061F01100DFA946 /* FlightParametricsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4633122061F52B00DFA946 /* FAEasing.swift in Sources */,
+				3A4633122061F52B00DFA946 /* FPEasing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
