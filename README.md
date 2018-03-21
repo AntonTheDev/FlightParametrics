@@ -1,7 +1,6 @@
 # FlightParametrics
 [![Cocoapods Compatible](https://img.shields.io/badge/pod-v0.9.0-blue.svg)]()
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)]()
-[![Build Status](https://travis-ci.org/AntonTheDev/FlightParametrics.svg?branch=master)](https://travis-ci.org/AntonTheDev/FlightParametrics)
 [![Platform](https://img.shields.io/badge/platform-iOS%20|%20tvOS-lightgrey.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-343434.svg)](/LICENSE.md)
 
