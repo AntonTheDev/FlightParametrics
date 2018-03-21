@@ -33,26 +33,33 @@ A sample visual reference can be found [here](http://easings.net/)
 
 ```
 
-    // Can be declared as an equatable propertyE, supports == / !=
+    // Can be declared as an Equatable 
+    // property, supports == / !=
 
-    var easingOne : FAEasing = .inOutCubic
+    var easing : FAEasing = .inOutCubic
+    
+```
+```
 
+    // Returns the parametric progress based 
+    // on some calculated relative linear
+    // progress from 0.0 - 1.0
 
-    // Returns the parametric progress based on some calculated
-    // relative linear progress from 0.0 - 1.0
+    var progress = easing.parametricProgress(relativeProgress)
+    
+```
+```
 
-    var parametricProgress = easing.parametricProgress(relativeProgress)
-
-
-    // You can ask an easing for its inverse which will
-    // return it's corresponding inverse parametric function
+    // You can ask an easing for its inverse
+    // which will return it's corresponding
+    // inverse parametric function
     //
     //  i.e .inOutCubic -> .outInCubic
     //      .inSine -> .outSine
     //      .outCircular -> .inCircular
 
     var easingTwo : FAEasing = easingOne.reverseEasing()
-
+    
 ```
 
 These are the supported parametric curves that you can apply to the property animation.
