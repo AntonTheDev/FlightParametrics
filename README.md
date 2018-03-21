@@ -1,4 +1,4 @@
-# FlightAnimator
+# FlightParametrics
 [![Cocoapods Compatible](https://img.shields.io/badge/pod-v0.9.0-blue.svg)]()
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)]()
 [![Build Status](https://travis-ci.org/AntonTheDev/FlightParametrics.svg?branch=master)](https://travis-ci.org/AntonTheDev/FlightParametrics)
@@ -31,7 +31,7 @@ A sample visual reference can be found [here](http://easings.net/)
 ## Basic Use
 
 
-```swift
+```
 
     // Can be declared as an equatable propertyE, supports == / !=
 
