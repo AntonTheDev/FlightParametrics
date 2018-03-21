@@ -34,7 +34,7 @@ A sample visual reference can be found [here](http://easings.net/)
 // Can be declared as an Equatable 
 // property, supports == / !=
 
-var easing : FAEasing = .inOutCubic   
+var easing : FPEasing = .inOutCubic   
 ```
 ```
 // Returns the parametric progress based 
