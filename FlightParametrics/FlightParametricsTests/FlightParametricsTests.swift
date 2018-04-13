@@ -11,26 +11,131 @@ import XCTest
 
 class FlightParametricsTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testReverseEasing()
+    {
+        XCTAssert(FPEasing.linear.reverseEasing() == .linear, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.smoothStep.reverseEasing() == .smoothStep, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.smootherStep.reverseEasing() == .smootherStep, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inAtan.reverseEasing() == .outAtan, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outAtan.reverseEasing() == .inAtan, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutAtan.reverseEasing() == .inOutAtan, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inSine.reverseEasing() == .outSine, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outSine.reverseEasing() == .inSine, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutSine.reverseEasing() == .outInSine, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outInSine.reverseEasing() == .inOutSine, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inQuadratic.reverseEasing() == .outQuadratic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outQuadratic.reverseEasing() == .inQuadratic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutQuadratic.reverseEasing() == .outInQuadratic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outInQuadratic.reverseEasing() == .inOutQuadratic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inCubic.reverseEasing() == .outCubic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outCubic.reverseEasing() == .inCubic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutCubic.reverseEasing() == .outInCubic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outInCubic.reverseEasing() == .inOutCubic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inQuartic.reverseEasing() == .outQuartic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outQuartic.reverseEasing() == .inQuartic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutQuartic.reverseEasing() == .outInQuartic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outInQuartic.reverseEasing() == .inOutQuartic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inQuintic.reverseEasing() == .outQuintic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outQuintic.reverseEasing() == .inQuintic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutQuintic.reverseEasing() == .outInQuintic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outInQuintic.reverseEasing() == .inOutQuintic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inExponential.reverseEasing() == .outExponential, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outExponential.reverseEasing() == .inExponential, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outInExponential.reverseEasing() == .inOutExponential, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutExponential.reverseEasing() == .outInExponential, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inCircular.reverseEasing() == .outCircular, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outCircular.reverseEasing() == .inCircular, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outInCircular.reverseEasing() == .inOutCircular, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutCircular.reverseEasing() == .outInCircular, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inBack.reverseEasing() == .outBack, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outBack.reverseEasing() == .inBack, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutBack.reverseEasing() == .outInBack, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outInBack.reverseEasing() == .inOutBack, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inElastic.reverseEasing() == .outElastic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outElastic.reverseEasing() == .inElastic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutElastic.reverseEasing() == .outInElastic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outInElastic.reverseEasing() == .inOutElastic, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inBounce.reverseEasing() == .outBounce, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outBounce.reverseEasing() == .inBounce, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.outInBounce.reverseEasing() == .inOutBounce, "[testReverseEasing] - incorrect reverseEasing")
+        XCTAssert(FPEasing.inOutBounce.reverseEasing() == .outInBounce, "[testReverseEasing] - incorrect reverseEasing")
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testParametricEasing()
+    {
+        XCTAssert(FPEasing.linear.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.smoothStep.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.smootherStep.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inAtan.parametricProgress(0.5)) == 0.044 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outAtan.parametricProgress(0.5)) == 0.956 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inOutAtan.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inSine.parametricProgress(0.5)) == 0.293 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outSine.parametricProgress(0.5)) == 0.707 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutSine.parametricProgress(0.75)) == 0.854 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outInSine.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inQuadratic.parametricProgress(0.5) == 0.25 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outQuadratic.parametricProgress(0.5) == 0.75 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inOutQuadratic.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outInQuadratic.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inCubic.parametricProgress(0.5) == 0.125 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outCubic.parametricProgress(0.5) == 0.875 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inOutCubic.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outInCubic.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inQuartic.parametricProgress(0.25)) == 0.004 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outQuartic.parametricProgress(0.5) == 0.9375 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inOutQuartic.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outInQuartic.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inQuintic.parametricProgress(0.5) == 0.03125 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outQuintic.parametricProgress(0.5) == 0.96875 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inOutQuintic.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outInQuintic.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inExponential.parametricProgress(0.5) == 0.03125 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outExponential.parametricProgress(0.5) == 0.96875 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInExponential.parametricProgress(0.5)) == 0.500 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inOutExponential.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inCircular.parametricProgress(0.5)) == 0.134 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outCircular.parametricProgress(0.5)) == 0.866 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outInCircular.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inOutCircular.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inBack.parametricProgress(0.5)) == -0.088 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outBack.parametricProgress(0.5) == 1.0876975 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outInBack.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inOutBack.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inElastic.parametricProgress(0.5)) == -0.022 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outElastic.parametricProgress(0.5)) == 1.022 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.outInElastic.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inOutElastic.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inBounce.parametricProgress(0.5)) == 0.281 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outBounce.parametricProgress(0.5)) == 0.719 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInBounce.parametricProgress(0.5)) == 0.500 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(FPEasing.inOutBounce.parametricProgress(0.5) == 0.5 , "[testParametricEasing] - incorrect testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outSine.parametricProgress(0.4)) == 0.588 , "[testParametricEasing] - incorrect \(FPEasing.outSine.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutQuadratic.parametricProgress(0.4)) == 0.32 , "[testParametricEasing] - incorrect \(FPEasing.inOutQuadratic.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInQuadratic.parametricProgress(0.2)) == 0.32 , "[testParametricEasing] - incorrect \(FPEasing.outInQuadratic.parametricProgress(0.2)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInQuartic.parametricProgress(0.2)) == 0.435 , "[testParametricEasing] - incorrect \(FPEasing.outInQuartic.parametricProgress(0.2)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutQuartic.parametricProgress(0.2)) == 0.013 , "[testParametricEasing] - incorrect \(FPEasing.inOutQuartic.parametricProgress(0.2)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutQuintic.parametricProgress(0.2)) == 0.005 , "[testParametricEasing] - incorrect \(FPEasing.inOutQuintic.parametricProgress(0.2)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutCubic.parametricProgress(0.2)) == 0.032 , "[testParametricEasing] - incorrect \(FPEasing.inOutCubic.parametricProgress(0.2)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inExponential.parametricProgress(0.0)) == 0.0 , "[testParametricEasing] - incorrect \(FPEasing.inExponential.parametricProgress(0.0)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInExponential.parametricProgress(1.0)) == 0.5 , "[testParametricEasing] - incorrect \(FPEasing.outInExponential.parametricProgress(1.0)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInExponential.parametricProgress(0.4)) == 0.498 , "[testParametricEasing] - incorrect \(FPEasing.outInExponential.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInSine.parametricProgress(0.4)) == 0.476 , "[testParametricEasing] - incorrect \(FPEasing.outInSine.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutExponential.parametricProgress(0.25)) ==  0.016 , "[testParametricEasing] - incorrect \(FPEasing.inOutExponential.parametricProgress(0.25)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutExponential.parametricProgress(0.0)) == 0.0 , "[testParametricEasing] - incorrect \(FPEasing.inOutExponential.parametricProgress(0.0)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutExponential.parametricProgress(1.0)) == 1.0 , "[testParametricEasing] - incorrect \(FPEasing.inOutExponential.parametricProgress(1.0)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutCircular.parametricProgress(0.4)) == 0.2 , "[testParametricEasing] - incorrect \(FPEasing.inOutCircular.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInCircular.parametricProgress(0.4)) ==  0.490 , "[testParametricEasing] - incorrect \(FPEasing.outInCircular.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutBack.parametricProgress(0.4)) == 0.021 , "[testParametricEasing] - incorrect \(FPEasing.inOutBack.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInBack.parametricProgress(0.4)) == -0.055 , "[testParametricEasing] - incorrect \(FPEasing.outInBack.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutElastic.parametricProgress(0.4)) == -0.073 , "[testParametricEasing] - incorrect \(FPEasing.inOutElastic.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInElastic.parametricProgress(0.4)) ==  2.176 , "[testParametricEasing] - incorrect \(FPEasing.outInElastic.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outBounce.parametricProgress(0.85)) ==  0.926 , "[testParametricEasing] - incorrect \(FPEasing.outBounce.parametricProgress(0.85)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.inOutBounce.parametricProgress(0.4)) == 0.349 , "[testParametricEasing] - incorrect \(FPEasing.inOutBounce.parametricProgress(0.4)) testParametricEasing")
+        XCTAssert(roundedCGFloat(FPEasing.outInBounce.parametricProgress(0.4)) == 0.151 , "[testParametricEasing] - incorrect \(FPEasing.outInBounce.parametricProgress(0.4)) testParametricEasing")
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func roundedCGFloat(_ value : CGFloat) -> CGFloat
+    {
+        return CGFloat(round(1000*value)/1000)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

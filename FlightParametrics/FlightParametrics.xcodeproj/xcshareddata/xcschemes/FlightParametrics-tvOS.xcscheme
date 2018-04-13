@@ -20,22 +20,46 @@
                ReferencedContainer = "container:FlightParametrics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "13CB9B2520814DC9009BBD8B"
+               BuildableName = "FlightParametricsTests-tvOS.xctest"
+               BlueprintName = "FlightParametricsTests-tvOS"
+               ReferencedContainer = "container:FlightParametrics.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3A4632F92061F33B00DFA946"
+            BuildableName = "FlightParametrics.framework"
+            BlueprintName = "FlightParametrics-tvOS"
+            ReferencedContainer = "container:FlightParametrics.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A4633012061F33C00DFA946"
-               BuildableName = "FlightParametrics-tvOSTests.xctest"
-               BlueprintName = "FlightParametrics-tvOSTests"
+               BlueprintIdentifier = "13CB9B2520814DC9009BBD8B"
+               BuildableName = "FlightParametricsTests-tvOS.xctest"
+               BlueprintName = "FlightParametricsTests-tvOS"
                ReferencedContainer = "container:FlightParametrics.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,7 +80,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"

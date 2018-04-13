@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13CB9B2920814DC9009BBD8B /* FlightParametricsTests_tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB9B2820814DC9009BBD8B /* FlightParametricsTests_tvOS.swift */; };
+		13CB9B2E20814DD0009BBD8B /* FlightParametricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4632E52061F01100DFA946 /* FlightParametricsTests.swift */; };
 		3A4632E12061F01100DFA946 /* FlightParametrics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4632D72061F01100DFA946 /* FlightParametrics.framework */; };
 		3A4632E62061F01100DFA946 /* FlightParametricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4632E52061F01100DFA946 /* FlightParametricsTests.swift */; };
 		3A4632E82061F01100DFA946 /* FlightParametrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A4632DA2061F01100DFA946 /* FlightParametrics.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13CB9B2620814DC9009BBD8B /* FlightParametricsTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlightParametricsTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CB9B2820814DC9009BBD8B /* FlightParametricsTests_tvOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightParametricsTests_tvOS.swift; sourceTree = "<group>"; };
+		13CB9B2A20814DC9009BBD8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A4632D72061F01100DFA946 /* FlightParametrics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlightParametrics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4632DA2061F01100DFA946 /* FlightParametrics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlightParametrics.h; sourceTree = "<group>"; };
 		3A4632E02061F01100DFA946 /* FlightParametricsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightParametricsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +42,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		13CB9B2320814DC9009BBD8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A4632D32061F01100DFA946 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,11 +74,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13CB9B2720814DC9009BBD8B /* FlightParametricsTests-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				13CB9B2820814DC9009BBD8B /* FlightParametricsTests_tvOS.swift */,
+				13CB9B2A20814DC9009BBD8B /* Info.plist */,
+			);
+			path = "FlightParametricsTests-tvOS";
+			sourceTree = "<group>";
+		};
 		3A4632CD2061F01000DFA946 = {
 			isa = PBXGroup;
 			children = (
 				3A4632D92061F01100DFA946 /* FlightParametrics */,
 				3A4632E42061F01100DFA946 /* FlightParametricsTests */,
+				13CB9B2720814DC9009BBD8B /* FlightParametricsTests-tvOS */,
 				3A4632D82061F01100DFA946 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +99,7 @@
 				3A4632D72061F01100DFA946 /* FlightParametrics.framework */,
 				3A4632E02061F01100DFA946 /* FlightParametricsTests.xctest */,
 				3A4632FA2061F33B00DFA946 /* FlightParametrics.framework */,
+				13CB9B2620814DC9009BBD8B /* FlightParametricsTests-tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +153,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		13CB9B2520814DC9009BBD8B /* FlightParametricsTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CB9B2B20814DC9009BBD8B /* Build configuration list for PBXNativeTarget "FlightParametricsTests-tvOS" */;
+			buildPhases = (
+				13CB9B2220814DC9009BBD8B /* Sources */,
+				13CB9B2320814DC9009BBD8B /* Frameworks */,
+				13CB9B2420814DC9009BBD8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlightParametricsTests-tvOS";
+			productName = "FlightParametricsTests-tvOS";
+			productReference = 13CB9B2620814DC9009BBD8B /* FlightParametricsTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3A4632D62061F01100DFA946 /* FlightParametrics-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A4632EB2061F01100DFA946 /* Build configuration list for PBXNativeTarget "FlightParametrics-iOS" */;
@@ -190,10 +230,14 @@
 		3A4632CE2061F01100DFA946 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Anton Doudarev";
 				TargetAttributes = {
+					13CB9B2520814DC9009BBD8B = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
 					3A4632D62061F01100DFA946 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -223,11 +267,19 @@
 				3A4632D62061F01100DFA946 /* FlightParametrics-iOS */,
 				3A4632F92061F33B00DFA946 /* FlightParametrics-tvOS */,
 				3A4632DF2061F01100DFA946 /* FlightParametricsTests */,
+				13CB9B2520814DC9009BBD8B /* FlightParametricsTests-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		13CB9B2420814DC9009BBD8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A4632D52061F01100DFA946 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +304,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		13CB9B2220814DC9009BBD8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CB9B2920814DC9009BBD8B /* FlightParametricsTests_tvOS.swift in Sources */,
+				13CB9B2E20814DD0009BBD8B /* FlightParametricsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A4632D22061F01100DFA946 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +349,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		13CB9B2C20814DC9009BBD8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WQAUP4LZJV;
+				INFOPLIST_FILE = "FlightParametricsTests-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloelephant.FlightParametricsTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Debug;
+		};
+		13CB9B2D20814DC9009BBD8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WQAUP4LZJV;
+				INFOPLIST_FILE = "FlightParametricsTests-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloelephant.FlightParametricsTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Release;
+		};
 		3A4632E92061F01100DFA946 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -522,6 +621,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		13CB9B2B20814DC9009BBD8B /* Build configuration list for PBXNativeTarget "FlightParametricsTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CB9B2C20814DC9009BBD8B /* Debug */,
+				13CB9B2D20814DC9009BBD8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3A4632D12061F01100DFA946 /* Build configuration list for PBXProject "FlightParametrics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
