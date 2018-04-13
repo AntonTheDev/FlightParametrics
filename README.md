@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-343434.svg)](/LICENSE.md)
 
 [![Build Status](https://travis-ci.org/AntonTheDev/FlightParametrics.svg?branch=master)](https://travis-ci.org/AntonTheDev/FlightParametrics)
-[![codecov.io](https://codecov.io/gh/codecov/FlightParametrics/branch/master/graphs/badge.svg)](https://codecov.io/gh/codecov/FlightParametrics/branch/master)
+[![codecov.io](https://codecov.io/gh/AntonTheDev/FlightParametrics/branch/master/graphs/badge.svg)](https://codecov.io/gh/AntonTheDev/FlightParametrics/branch/master)
 
 ## Introduction
 
