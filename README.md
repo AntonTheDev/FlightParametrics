@@ -4,6 +4,9 @@
 [![Platform](https://img.shields.io/badge/platform-iOS%20|%20tvOS-lightgrey.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-343434.svg)](/LICENSE.md)
 
+[![Build Status](https://travis-ci.org/AntonTheDev/FlightParametrics.svg?branch=master)](https://travis-ci.org/AntonTheDev/FlightParametrics)
+[![codecov.io](https://codecov.io/gh/codecov/FlightParametrics/branch/master/graphs/badge.svg)](https://codecov.io/gh/codecov/FlightParametrics/branch/master)
+
 ## Introduction
 
 FlightParametrics is an easy to use enum which can be used as a type, and can calculate the normalized progress, ranging from 0.0 to 1.0, for the most common parametric easings.
@@ -31,13 +34,13 @@ A sample visual reference can be found [here](http://easings.net/)
 
 
 ```
-// Can be declared as an Equatable 
+// Can be declared as an Equatable
 // property, supports == / !=
 
 var easing : FPEasing = .inOutCubic   
 ```
 ```
-// Returns the parametric progress based 
+// Returns the parametric progress based
 // on some calculated relative linear
 // progress from 0.0 - 1.0
 
