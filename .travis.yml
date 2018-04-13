@@ -1,0 +1,13 @@
+language: objective-c
+osx_image: xcode9.3
+
+xcode_sdk:
+- iphonesimulator11.3
+- appletvsimulator11.3
+
+xcode_workspace: FlightParametrics.xcworkspace
+
+jobs:
+  include:
+    - script: xcodebuild -workspace FlightParametrics.xcworkspace -scheme FlightParametrics-iOS -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=11.3' test
+    - script: xcodebuild -workspace FlightParametrics.xcworkspace -scheme FlightParametrics-tvOS -sdk appletvsimulator -destination 'platform=tvOS Simulator,name=Apple TV,OS=11.3' test
